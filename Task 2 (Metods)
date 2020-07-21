@@ -1,0 +1,93 @@
+/* 1. Реализовать методы массива 
+// map () 
+/* let numbers = [1,2,3,4,5]
+
+ function doubleNumber (arr,fn) {
+    let resultArr = []
+    for (let i=0; i < arr.length; i++) {
+         resultArr.push(fn(arr[i]));
+    }
+     return resultArr
+ }
+ 
+ let res = doubleNumber(numbers,function(elem) {
+     return elem*2;
+ }) 
+ 
+ console.log(res)
+*/
+
+/*2. filter
+
+/* let numbers = [1,2,3,4,6]
+
+function oddNumber (arr, fn) {
+    let resultArr = []
+      for (let i=0; i < arr.length; i++) {
+          if(fn(arr[i])) {
+          resultArr.push(arr[i]);
+        }
+    }
+    return resultArr
+       
+}
+let res = oddNumber (numbers, function(elem) {
+    return elem % 2;
+})
+console.log(res)
+*/
+/*some ()
+/*
+ let numbers = [1,2,3,4,5,6,7]
+ function some (arr,fn) {
+     let ischeck =0;
+     if (arr.length ===0 ) return false;
+     for (let i=0; i < arr.length; i++) {
+     if(fn(arr[i])) { 
+         ischeck = true;
+         i=arr.length;
+     }
+     else ischeck = false;
+    }
+     return ischeck;
+ }
+ let res = some (numbers, function(elem) {
+    return elem < 3;
+})
+console.log(res)
+*/
+//every 
+ 
+/*let numbers = [1,2,3,10,5,6,7]
+ function every (arr,fn) {
+     let ischeck;
+     if (arr.length ===0 ) return false;
+     for (let i=0; i < arr.length; i++) {
+     if(fn(arr[i])) { 
+         ischeck = true;
+     }
+     else {ischeck = false;
+     i=arr.length;
+     }
+    }
+     return ischeck;
+ }
+ let res = every (numbers, function(elem) {
+    return elem < 10;
+})
+console.log(res)
+*/
+// reduce ()
+/*let numbers = [1,2,3,10,5,6,7]
+ function reduce (arr,fn) {
+     let result=arr[0];
+     for (let i=1; i < arr.length; i++) {
+         result = fn(result,arr[i])
+    }
+     return result;
+ }
+ let res = reduce (numbers, function(a,b) {
+    return a*b;
+})
+console.log(res)
+*/
